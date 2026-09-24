@@ -1,3 +1,3 @@
-#include <stdio.h>
+members = ["Roxane Framroze", "Zainab Aamer", "Hyeyun Kwon"]
 
-print("Hello, World! Our group members are: [Roxane Framroze, Hyeyun Kwon, ]")
+print(f"Hello, World! Our group members are: [{', '.join(members)}]")
