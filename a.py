@@ -1,3 +1,3 @@
-members = ["Roxane Framroze", "Zainab Aamer", ]
+members = ["Roxane Framroze", "Zainab Aamer", "Hyeyun Kwon"]
 
-print("Hello, World! Our group members are: " + ", ".join(members))
+print(f"Hello, World! Our group members are: [{', '.join(members)}]")
