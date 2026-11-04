@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Locked</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <main class="card">
+      <h1>Locked</h1>
+      <p class="subtitle">Check whether today's screen-on time stayed under your goal.</p>
+
+      <form id="goal-form">
+        <label>
+          User ID
+          <input id="user_id" name="user_id" type="number" min="1" step="1" required />
+        </label>
+        <label>
+          Screen-on time (hours)
+          <input id="screen_on_time_hours" name="screen_on_time_hours" type="number" min="0" step="0.1" required />
+        </label>
+        <label>
+          Target screen time (hours)
+          <input id="target_hours" name="target_hours" type="number" min="0" step="0.1" value="4" required />
+        </label>
+        <button type="submit">Check Goal</button>
+      </form>
+
+      <p id="result" class="result" hidden></p>
+      <p id="db-note" class="db-note" hidden></p>
+    </main>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
